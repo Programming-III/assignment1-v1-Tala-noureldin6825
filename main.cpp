@@ -55,29 +55,34 @@ Enclosure(){
   capacity(0);
   currentCount(0);
 }
-Enclosure(Animal*animals,int capacity ,int currentCount){
+Enclosure(){
+  Animal*animals="";
+  capacity(0);
+  currentCount(0);
+}
+Animal::Enclosure(Animal*animals,int capacity ,int currentCount){
   Animal*animals=new animal(animals); a;
   this->capacity=capacity;
   this->currentCount=currentCount;
 }
-~delete animal[];
+Animal::~delete animal[];
 
-void setCapacity(){
+Animal::void setCapacity(){
   capacity(0);
 }
-void setcurrentCount(){
+Animal::void setcurrentCount(){
   currentCount(0);
 }
-void getCapacity() const{
+Animal::void getCapacity() const{
   return capacity;
 }
-void getcurrentCount() const{
+Animal::void getcurrentCount() const{
   reutrn currentCount;
 }
-void addAnimal(Animal*a){
-  
+Animal::void addAnimal(Animal*a){
+  Enclosure+=animal;
 }
-void displayAnimals(){
+Animal::void displayAnimals(){
   cout<<"capacity:"<<capacity<<endl;
   cout<<"current count:"<<currentCount<<endl;
 }

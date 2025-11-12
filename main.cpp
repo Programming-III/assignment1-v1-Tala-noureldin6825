@@ -94,21 +94,21 @@ Animal::Visitor(string Visitorname,int ticketsBought){
   this->Visitorname= Visitorname;
   this->ticketsBought=ticketsBought;
 }
-void ~Visitor();
+void Animal:: ~Visitor();
 
-void setVisitorname(){
+void Animal:: setVisitorname(){
   Visitorname="";
 }
-void setticketsBought(){
+void Animal:: setticketsBought(){
   ticketsBought(0);
 }
-void getVisitorname() const{
+void Animal:: getVisitorname() const{
   return Visitorname;
 }
-void getticketsBought() const{
+void Animal:: getticketsBought() const{
   return ticketsBought;
 }
-void displayInfo(){
+void Animal:: displayInfo(){
   cout<< "Visitor name:"<< Visitorname<<endl;
   cout <<" tickets bought:"<< ticketsBought<<endl;
 }

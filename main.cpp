@@ -50,12 +50,12 @@ bool void feed(){
   return false;
 }
 
-Enclosure(){
+Animal::Enclosure(){
   Animal*animals="";
   capacity(0);
   currentCount(0);
 }
-Enclosure(){
+Animal::Enclosure(){
   Animal*animals="";
   capacity(0);
   currentCount(0);
@@ -65,24 +65,24 @@ Animal::Enclosure(Animal*animals,int capacity ,int currentCount){
   this->capacity=capacity;
   this->currentCount=currentCount;
 }
-Animal::~delete animal[];
+void Animal:: ~delete animal[];
 
-Animal::void setCapacity(){
+void Animal:: setCapacity(){
   capacity(0);
 }
-Animal::void setcurrentCount(){
+void Animal:: setcurrentCount(){
   currentCount(0);
 }
-Animal::void getCapacity() const{
+void Animal:: getCapacity() const{
   return capacity;
 }
-Animal::void getcurrentCount() const{
+void Animal:: getcurrentCount() const{
   reutrn currentCount;
 }
-Animal::void addAnimal(Animal*a){
+void Animal:: addAnimal(Animal*a){
   Enclosure+=animal;
 }
-Animal::void displayAnimals(){
+void Animal:: displayAnimals(){
   cout<<"capacity:"<<capacity<<endl;
   cout<<"current count:"<<currentCount<<endl;
 }
@@ -90,7 +90,7 @@ Visitor(){
   Visitorname="";
   ticketsBought(0);
 }
-Visitor(string Visitorname,int ticketsBought){
+Animal::Visitor(string Visitorname,int ticketsBought){
   this->Visitorname= Visitorname;
   this->ticketsBought=ticketsBought;
 }
@@ -109,7 +109,7 @@ void getticketsBought() const{
   return ticketsBought;
 }
 void displayInfo(){
-  cout<< "Visitor name:"Visitorname<<endl;
+  cout<< "Visitor name:"<< Visitorname<<endl;
   cout <<" tickets bought:"<< ticketsBought<<endl;
 }
 // ============== MAIN FUNCTION ==============
